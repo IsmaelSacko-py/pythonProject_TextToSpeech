@@ -38,9 +38,9 @@ class TextToSpeech():
         self.select_div = ctk.CTkFrame(self.action_div, fg_color=self.foreground_color)
         self.btn_div = ctk.CTkFrame(self.action_div, fg_color=self.foreground_color)
         
-        self.speach_image = ctk.CTkImage(Image.open("Images/Image2.png"), size = (40, 40))
-        self.save_image = ctk.CTkImage(Image.open("Images/SaveImage2.png"), size=(25,40))
-        self.logo = ctk.CTkImage(Image.open("Images/Logo.png"), size = (80, 80))
+        self.speach_image = ctk.CTkImage(Image.open("Images/speak.png"), size = (40, 40))
+        self.save_image = ctk.CTkImage(Image.open("Images/save.png"), size=(25,40))
+        self.logo = ctk.CTkImage(Image.open("Images/TTS_BG.png"), size = (110, 110))
         self.inputText = ctk.CTkTextbox(self.scan_div, width=400, height=200, font=('Arial', 16),border_width=1, border_color="white", fg_color="black", text_color=self.input_text_color)
 
         self.label_voice = ctk.CTkLabel(self.select_div, text='VOICE', font=('Arial',15, 'bold'), text_color = self.label_text_color)
